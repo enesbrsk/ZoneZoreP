@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/premiumImage"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:src="@drawable/search"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/premiumUserName"
+        android:layout_width="121dp"
+        android:layout_height="18dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:text="Ela Balcı"
+        android:textColor="#6A6A77"
+        android:textSize="14dp" />
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="15dp"
+        android:text="Premium"
+        android:textSize="12dp"
+        android:layout_marginTop="2dp"
+        android:layout_gravity="center"
+        android:textColor="#FEAC02"/>
+</LinearLayout>

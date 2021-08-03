@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#F4F4F4"
+    tools:context=".Fragments.UsersFragment">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#1C8E5D"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_gravity="center"
+            android:layout_width="325dp"
+            android:layout_marginTop="73dp"
+            app:cardCornerRadius="7dp"
+            android:outlineSpotShadowColor="@color/colorAccent"
+            android:layout_height="50dp"
+            app:cardElevation="7dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="24dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+
+                >
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/search_view"
+                    android:layout_width="150dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="17dp"
+                    android:textSize="12dp"
+
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="center"
+        android:layout_width="325dp"
+        android:layout_marginTop="32dp"
+        app:cardCornerRadius="7dp"
+        android:outlineSpotShadowColor="@color/colorAccent"
+        android:layout_height="50dp"
+        app:cardElevation="7dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="24dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            >
+
+            <CheckBox
+                android:checked="false"
+                android:id="@+id/checkBoxFemale"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+            />
+
+            <TextView
+                android:textSize="12dp"
+                android:layout_width="32dp"
+                android:layout_height="15dp"
+                android:text="Kadın" />
+
+            <LinearLayout
+                android:layout_marginLeft="70dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/checkBoxMale"
+
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"/>
+
+                <TextView
+                    android:textSize="12dp"
+                    android:textAlignment="textEnd"
+                    android:layout_width="32dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="104dp"
+                    android:text="Erkek" />
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+<androidx.cardview.widget.CardView
+    android:layout_gravity="center"
+    android:layout_width="325dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:layout_marginTop="25dp"
+    app:cardCornerRadius="7dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userRecylerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_person_pin_24"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Kullanıcı Bulunamadı"
+        android:textSize="28sp"
+        android:visibility="invisible" />
+
+
+</LinearLayout>

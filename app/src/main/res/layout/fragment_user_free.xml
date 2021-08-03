@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Fragments.UserFreeFragment">
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#1C8E5D"/>
+
+  <androidx.cardview.widget.CardView
+      app:cardCornerRadius="7dp"
+      android:layout_width="315dp"
+      android:layout_height="163dp"
+      android:layout_marginTop="25dp"
+    android:layout_gravity="center" >
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/userFreeRecylerView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+
+      </androidx.recyclerview.widget.RecyclerView>
+
+  </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="315dp"
+        android:layout_height="50dp"
+        app:cardCornerRadius="7dp"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:id="@+id/randevu_free_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="18dp"
+                android:gravity="center"
+                android:text="Premium Üyelik Aç"
+                android:textColor="#1C8E5D" />
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="167dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/rightutton" />
+
+        </LinearLayout>
+        
+        
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>
